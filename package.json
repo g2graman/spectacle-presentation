@@ -1,0 +1,38 @@
+{
+  "name": "spectacle-presentation",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/core": "^10.0.7",
+    "@emotion/styled": "^10.0.7",
+    "gh-pages": "^2.0.1",
+    "prop-types": "^15.7.1",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
+    "recompose": "^0.30.0",
+    "spectacle": "^5.4.0",
+    "typescript": "^3.4.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "deploy": "npx gh-pages -d build",
+    "deploy:fresh": "rm -rf build && yarn build && yarn deploy"
+  },
+  "devDependencies": {
+    "@types/recompose": "^0.30.6",
+    "react-scripts": "^2.1.5",
+    "serve": "^10.1.2"
+  },
+  "resolutions": {
+    "spectacle/**/prismjs": "1.6.0"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
